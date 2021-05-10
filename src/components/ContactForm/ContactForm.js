@@ -51,7 +51,10 @@ class ContactForm extends Component {
             name="phone"
             placeholder="Enter phone number"
             value={phone}
-            onChange={this.handleChangeForm} />
+            onChange={this.handleChangeForm}
+            pattern="(\+?( |-|\.)?\d{1,2}( |-|\.)?)?(\(?\d{3}\)?|\d{3})( |-|\.)?(\d{3}( |-|\.)?\d{4})"
+            title="Enter a correct Pnone-number"
+            required    />
                 <button type="submit" className={styles.btnAddContact}>
           Add contact
         </button>
